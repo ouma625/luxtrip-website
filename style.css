@@ -1,0 +1,493 @@
+
+/* Import Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER STYLING */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: transparent;
+}
+
+/* LOGO SIZING */
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+/* NAVIGATION MENU */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: orange;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #001f3f; /* nice orange brand theme */
+}
+
+.book-btn {
+    padding: 10px 20px;
+    background: orange;     /* Orange */
+    color: #001f3f;          /* Navy text */
+    border: none;
+    border-radius: 50px;     /* Rounded corners */
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+.book-btn:hover {
+    background: #cc5200;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: orange; 
+    text-align: center;
+    
+}
+
+.hero-content p {
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    font-size: 1.5rem;
+}   
+
+.hero-content {
+    text-align: center;
+}
+
+
+.hero-content .btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    background: orange;       /* Orange background */
+    color: #001f3f;            /* Navy blue text */
+    border: none;
+    border-radius: 50px;       /* Rounded corners */
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+.hero-content .btn:hover {
+    background:white; /* Slightly white */
+}
+
+.hero{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.9),   /* Top dark overlay */
+        rgba(0, 0, 0, 0.9)    
+    );
+    background-image: url(../Images/range.jpeg);
+    background-size: cover;      /* Make image cover entire hero */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    padding: 200px 0;           /* Top + bottom padding */
+    color: white;               /* Optional: makes text visible */
+    position: relative;
+}
+
+.why {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+.why h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: orange;  
+}
+
+.why-container {
+    display: flex;
+    justify-content: center;    
+    gap: 5px;                 
+    flex-wrap: wrap;
+}
+
+.why-container div {
+    background: #001f3f;      
+    color: white;             
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 200px;         
+    border-radius: 10px;      
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.why div h3 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: orange;
+}
+
+.about {
+    padding: 50px 0;
+}
+
+.about-box {
+    background: #f5f5f5;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.about-text {
+    flex: 2;
+    color: #001f3f;
+}
+
+.about-text h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #001f3f;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    border: radius 16px; 
+    box-shadow: #001f3f;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 16px;
+    background: #e6e6e6;
+    
+}
+
+
+#services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#services h1 {
+    color: #001f3f;      /* Navy blue */
+    margin-bottom: 40px;
+}
+
+/* GRID */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* BOX DESIGN */
+.service-box {
+    background: #f2f2f2;      /* Light grey */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* IMAGES */
+.service-box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* TEXT */
+.service-box h3 {
+    color: #001f3f;    /* Navy blue */
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    color: #001f3f;    /* Navy blue */
+    margin-bottom: 15px;
+}
+
+/* READ MORE BUTTON */
+.read-more {
+    display: inline-block;
+    background: #ff9c26;     /* Orange */
+    color: #001f3f;          /* Navy blue text */
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.read-more:hover {
+    background: #e68a1f;
+}
+
+#fleet-slider {
+    background: #001f3f; /* Navy blue */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#fleet-slider h1 {
+    color: #ff9c26; /* Orange */
+    margin-bottom: 25px;
+}
+
+/* Slider container */
+.slider-container {
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Slider track */
+.slider {
+    display: flex;
+    overflow: hidden; 
+    width: 700px;
+}
+
+/* Car images */
+.slider img {
+    width: 700px; 
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* Arrows */
+.arrow {
+    background: rgba(255,255,255,0.2);
+    border: none;
+    font-size: 40px;
+    color: white;
+    padding: 10px 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.arrow:hover {
+    background: rgba(255,255,255,0.4);
+}
+
+#cta {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#cta h2 {
+  margin-bottom: 25px;
+  color: navy;
+  font-size: 28px;
+}
+
+#cta a {
+  display: inline-block;
+  margin: 0 15px;            /* Even spacing horizontally */
+  padding: 12px 25px;
+  background: orange;        /* Orange buttons */
+  color: navy;               /* Navy text */
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+#cta a:hover {
+  background: #cc7a00;       /* Darker orange on hover */
+}
+
+/* Booking Section */
+#booking {
+  padding: 40px 20px;
+}
+
+#booking h2 {
+  color: orange;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Grey Box */
+#booking form {
+  background: #f2f2f2;        /* Light grey */
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* Labels */
+#booking label {
+  color: navy;
+  font-weight: lighter;
+  display: block;
+  margin: 15px 0 5px;
+}
+
+/* Inputs, selects, textareas */
+#booking input,
+#booking select,
+#booking textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid orange;   /* Orange border */
+  border-radius: 50px;
+  outline: none;
+}
+
+/* 2-column rows */
+.form-row {
+  display: flex;
+  gap: 60px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Button */
+#booking button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+  background: orange;
+  color: navy;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#booking button:hover {
+  background: #cc7a00;
+}
+
+footer {
+  background: #001f3f;
+  color: white;
+  padding: 50px 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section h3 {
+  color: orange;
+  margin-bottom: 12px;
+}
+
+.footer-logo h2 {
+  font-size: 28px;
+  color: orange;
+}
+
+.footer-logo p {
+  opacity: 0.8;
+}
+
+/* Navigation + services lists */
+.footer-section ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: orange;
+}
+
+/* WhatsApp button in footer */
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: orange;
+  color: #001f3f;
+  border-radius: 50px;
+  text-decoration: white;
+  font-weight: bold;
+}
+
+.whatsapp-btn:hover {
+  background: white;
+  color: #001f3f;
+}
+
+/* Social Icons */
+.social-icons a {
+  color: white;
+  font-size: 26px;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: orange;
+  transform: scale(1.2);
+}
+
+/* Bottom note */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+
+
+
+
+
+    

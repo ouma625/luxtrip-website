@@ -1,0 +1,212 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* FORCE CONTACT PAGE HEADER STYLE ON BLOG PAGE */
+.site-header {
+    width: 100%;
+    background: white !important;
+    padding: 15px 0;
+}
+
+.header-inner {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 40px;
+    padding: 0 40px;
+}
+
+/* LOGO LEFT */
+.logo {
+    font-size: 28px !important;
+    font-weight: 800 !important;
+    color: orange !important;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+/* NAV IN CENTER */
+.main-nav {
+    flex: 1 !important;
+    text-align: center !important;
+}
+
+.main-nav ul {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 30px !important;
+    list-style: none;
+}
+
+.main-nav ul li a {
+    color: orange !important;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.main-nav ul li a.active,
+.main-nav ul li a:hover {
+    color: #001f3f !important;
+}
+
+/* BOOK BUTTON ON RIGHT */
+.book-btn {
+    padding: 10px 22px;
+    background: orange !important;
+    color: #001f3f !important;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    flex-shrink: 0;
+    
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+/* HERO */
+.blog-hero {
+  background: #001f3f;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.blog-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.blog-hero p {
+  margin-top: 10px;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* EMPTY BLOG MESSAGE */
+.blog-empty {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.empty-box i {
+  font-size: 70px;
+  color: orange;
+  margin-bottom: 20px;
+}
+
+.empty-box h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #001f3f;
+}
+
+.empty-box p {
+  font-size: 18px;
+  opacity: 0.8;
+  color: #333;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .blog-hero h1 { font-size: 32px; }
+  .empty-box h2 { font-size: 26px; }
+}
+
+footer {
+  background: #001f3f;
+  color: white;
+  padding: 50px 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section h3 {
+  color: orange;
+  margin-bottom: 12px;
+}
+
+.footer-logo h2 {
+  font-size: 28px;
+  color: orange;
+}
+
+.footer-logo p {
+  opacity: 0.8;
+}
+
+/* Navigation + services lists */
+.footer-section ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: orange;
+}
+
+/* WhatsApp button in footer */
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: orange;
+  color: #001f3f;
+  border-radius: 50px;
+  text-decoration: white;
+  font-weight: bold;
+}
+
+.whatsapp-btn:hover {
+  background: white;
+  color: #001f3f;
+}
+
+/* Social Icons */
+.social-icons a {
+  color: white;
+  font-size: 26px;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: orange;
+  transform: scale(1.2);
+}
+
+/* Bottom note */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  opacity: 0.7;
+  font-size: 14px;
+}

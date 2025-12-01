@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LUXTRIP - executive transfer</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+              <img alt="LUXTRIP">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="Our Fleet">Our Fleet</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                        
+                    </li>
+                </ul>
+            </nav>
+            <a href="#booking" class="book-btn">Book Now</a>
+        </header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Executive Transfers Made Exceptional</h1>
+        <p><strong> Elite executive rides crafted for VIPs, corporate leaders, and exclusive events <br> where luxury, professionalism, and comfort come together in every journey.</strong></p>
+        <a href="#booking" class="btn">Book Now</a>
+    </div>
+</section>
+
+  <!--Why choose us-->
+  <section class="why">
+    <h2>Why Choose LUXTRIP?</h2>
+    <div class="why-container">
+    <div>
+      <h3>Premium Experience</h3>
+      <p>Luxury vehicles and first-class comfort.</p>
+    </div>
+
+    <div>
+      <h3>Professional Chauffeurs</h3>
+      <p>Trained, uniformed and courteous drivers.</p>
+    </div>
+
+    <div>
+      <h3>On Time</h3>
+      <p>We track flights & trains for timely pickups.</p>
+    </div>
+
+    <div>
+      <h3>Confidential & Safe</h3>
+      <p>VIP-level discretion and secure transfers.</p>
+    </div>
+    </div>
+  </section>
+
+
+  <section class="about">
+  <div class="about-box">
+
+    <!-- LEFT SIDE (TEXT) -->
+    <div class="about-text">
+      <h2>About Us</h2>
+
+      <p>
+        LUXTRIP is a premium executive transfer service dedicated to providing luxurious,
+        reliable, and professional transportation across Nairobi and its surroundings.
+        We specialise in delivering a seamless travel experience for executives, travelers,
+        high-profile individuals, and special events.
+      </p>
+
+      <p>
+        Founded on the principles of comfort, class, and consistency, LUXTRIP was built
+        to solve a simple problem — the need for reliable luxury mobility in Kenya. Every
+        ride is designed to offer a first-class feel, from the moment a client makes a booking
+        <a href="about.html">read-more</a>
+      </p>
+    </div>
+
+    <!-- RIGHT SIDE (IMAGE) -->
+    <div class="about-image">
+      <img src="images/CHAUFFEUR.jpeg" alt="About Luxtrip">
+    </div>
+
+  </div>
+</section>
+
+ 
+  <section id="services">
+    <h1>Our Services</h1>
+
+    <div class="services-grid">
+
+        <div class="service-box">
+            <img src="images/executive.jpg" alt="Executive Transfers">
+            <h3>Executive Transfers</h3>
+            <p>Corporate, diplomatic and VIP rides.</p>
+            <a href="services.html#executive" class="read-more">Read More</a>
+        </div>
+
+        <div class="service-box">
+            <img src="images/airport.jpg" alt="Airport Transfers">
+            <h3>Airport & SGR Transfer</h3>
+            <p>Meet and greet options available.</p>
+            <a href="services.html#airport" class="read-more">Read More</a>
+        </div>
+
+        <div class="service-box">
+            <img src="images/hotel.jpg" alt="Hotel Transfers">
+            <h3>Hotel & BnB Transfers</h3>
+            <p>Seamless transfers for travellers and guests.</p>
+            <a href="services.html#hotel" class="read-more">Read More</a>
+        </div>
+
+        <div class="service-box">
+            <img src="images/chauffeur.jpg" alt="Chauffeured">
+            <h3>Chauffeured Car Hire</h3>
+            <p>Hourly or full-day chauffeur packages.</p>
+            <a href="services.html#chauffeur" class="read-more">Read More</a>
+        </div>
+
+        <div class="service-box">
+            <img src="images/wedding.jpg" alt="Wedding Transfers">
+            <h3>Wedding & Events</h3>
+            <p>Premium cars for special occasions.</p>
+            <a href="services.html#wedding" class="read-more">Read More</a>
+        </div>
+
+        <div class="service-box">
+            <img src="images/corporate.jpg" alt="Corporate Mobility">
+            <h3>Corporate Mobility</h3>
+            <p>Company accounts & logistics support.</p>
+            <a href="services.html#corporate" class="read-more">Read More</a>
+        </div>
+
+    </div>
+</section>
+
+  <section id="fleet-slider">
+    <h1>Our Fleet</h1>
+
+    <div class="slider-container">
+
+        <button class="arrow left" onclick="moveLeft()">&#10094;</button>
+
+        <div class="slider">
+            <img src="images/range rover velar.png" alt="Range Rover Sport">
+            <img src="images/lexus 570.png" alt="Lexus LX570">
+            <img src="images/mercedes e class.png" alt="Mercedes e Class">
+            <img src="images/landcruiser.png" alt="Land Cruiser 300">
+            <img src="images/toyota prado.png" alt="Toyota Prado">
+            <img src="Images/mercedes v class.png" alt="Mercedes v class">
+            <img src="images/toyota alphard.png" alt="Toyota Alphard">
+            <img src="images/hiace.png" alt="Toyota Hiace">
+            <img src="Images/coaster.png" alt="coaster">
+        </div>
+
+        <button class="arrow right" onclick="moveRight()">&#10095;</button>
+
+    </div>
+
+    <script>
+let slider = document.querySelector(".slider");
+let scrollAmount = 700; // width of 1 image
+
+function moveRight() {
+    slider.scrollBy({
+        left: scrollAmount,
+        behavior: "smooth"
+    });
+}
+
+function moveLeft() {
+    slider.scrollBy({
+        left: -scrollAmount,
+        behavior: "smooth"
+    });
+}
+</script>
+</section> 
+
+  <!-- MID CTA-->
+   <section id="cta">
+    <h2>Book your Ride Today</h2>
+
+    <a href="https://wa.me/254705708471">WhatsApp Us</a>
+    <a href="tel:+254705708471">Call Now</a>
+    <a href="#booking">Book Now</a>
+   </section>
+
+   <section id="booking">
+  <h2>Online Booking</h2>
+
+  <form>
+
+    <!-- Name + Email -->
+    <div class="form-row">
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text">
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="text">
+      </div>
+    </div>
+
+    <!-- Pickup + Drop-off -->
+    <div class="form-row">
+      <div class="form-group">
+        <label>Pickup Location</label>
+        <input type="text">
+      </div>
+
+      <div class="form-group">
+        <label>Drop-off Location</label>
+        <input type="text">
+      </div>
+    </div>
+
+    <!-- Date + Time -->
+    <div class="form-row">
+      <div class="form-group">
+        <label>Date</label>
+        <input type="date">
+      </div>
+
+      <div class="form-group">
+        <label>Time</label>
+        <input type="time">
+      </div>
+    </div>
+
+    <!-- Service type -->
+    <label>Service Type</label>
+    <select>
+      <option>Executive Transfer</option>
+      <option>Airport Transfer</option>
+      <option>Chauffeured Hire</option>
+      <option>Wedding/Event</option>
+      <option>Corporate Transfer</option>
+    </select>
+
+    <!-- Flight details -->
+    <label>Special request</label>
+    <textarea rows="5"></textarea>
+
+    <!-- Button -->
+    <button type="submit">Book Now</button>
+
+  </form>
+</section>
+
+ <!--Footer-->
+<footer>
+  <div class="footer-container">
+
+    <!-- Logo + Tagline -->
+    <div class="footer-section footer-logo">
+      <h2>LUXTRIP</h2>
+      <p>Experience Luxury, Arrive in Style</p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="footer-section footer-nav">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#fleet">Our Fleet</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Our Services -->
+    <div class="footer-section footer-services">
+      <h3>Our Services</h3>
+      <ul>
+        <li>Executive Transfers</li>
+        <li>Wedding Transfers</li>
+        <li>Airport Transfers</li>
+        <li>Chauffeured Rides</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-section footer-contact">
+      <h3>Contact Us</h3>
+      <p>Nairobi, Kenya</p>
+      <p>Phone: <a href="tel:+254705708471">+254705708471</a></p>
+      <p>Email: <a href="mailto:info@luxtrip.com">info@luxtrip.com</a></p>
+
+      <a class="whatsapp-btn" href="https://wa.me/254705708471" target="_blank">WhatsApp Us</a>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-section footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://wa.me/254705708471" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="footer-bottom">© 2025 LUXTRIP Executive Transfers. All rights reserved.</p>
+</footer>
+   
+
+</body>
+</html>
+
+    </body>
+
+</html>
